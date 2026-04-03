@@ -1,5 +1,6 @@
 from vehicle import Vehicle
 from network import Network
+import matplotlib.pyplot as plt
 import random
 
 def run_simulation(num_vehicles=10, steps=50):
@@ -32,3 +33,10 @@ def run_simulation(num_vehicles=10, steps=50):
         "collisions": collisions,
         "packet_loss": network.packet_loss
     }
+
+def plot_results(collisions_history):
+    plt.plot(collisions_history)
+    plt.title("Collisions over time")
+    plt.xlabel("Simulation step")
+    plt.ylabel("Collisions")
+    plt.show()
