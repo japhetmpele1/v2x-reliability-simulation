@@ -24,3 +24,17 @@ This project is aligned with research topics in:
 - Intelligent Transport Systems (ITS)
 - V2X communications
 - Reliability and resilience of wireless systems
+
+## Project structure
+```
+v2x-reliability-simulation/
+│
+├── main.py
+├── simulation.py
+├── vehicle.py
+├── network.py
+├── utils.py
+├── requirements.txt
+└── README.md
+```
+
